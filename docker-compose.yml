@@ -3,7 +3,7 @@ version: '3'
 services:
 
   web:
-    container_name: jun_web
+    container_name: docker_web
     build: ./docker
     ports:
       - 70:80
@@ -13,7 +13,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: jun_db
+    container_name: docker_db
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: docker-database
@@ -29,7 +29,7 @@ services:
       - 6640:3306
 
   phpmyadmin:
-    container_name: jun_phpmyadmin
+    container_name: docker_phpmyadmin
     image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
