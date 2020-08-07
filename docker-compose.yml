@@ -9,7 +9,7 @@ services:
       - 70:80
     privileged: true
     volumes:
-      - /c/junrei_env/server:/var/www/html/public
+      - /c/docker_env/server:/var/www/html/public
 
   db:
     image: mysql:8.0
