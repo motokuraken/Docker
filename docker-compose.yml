@@ -6,7 +6,7 @@ services:
     container_name: jun_web
     build: ./docker
     ports:
-      - 40:80
+      - 70:80
     privileged: true
     volumes:
       - /c/junrei_env/server:/var/www/html/public
@@ -37,5 +37,5 @@ services:
       - PMA_USER=root
       - PMA_PASSWORD=root
     ports:
-      - 6040:80
+      - 7070:80
 
