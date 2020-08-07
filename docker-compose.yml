@@ -33,7 +33,7 @@ services:
     image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOST=jun_db
+      - PMA_HOST=docker_db
       - PMA_USER=root
       - PMA_PASSWORD=root
     ports:
